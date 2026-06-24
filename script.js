@@ -8,7 +8,7 @@ const PRODUCTS = {
     4: { id: 4, name: "Cream & Onion Makhana (Fox Nuts)", price: 169, weight: "70g" },
     5: { id: 5, name: "Cheese & Herbs Makhana (Fox Nuts)", price: 169, weight: "70g" },
     6: { id: 6, name: "Pudina Punch Makhana (Fox Nuts)", price: 169, weight: "70g" },
-    7: { id: 7, name: "Sweet & Sour Makhana (Fox Nuts)", price: 169, weight: "70g" },
+    7: { id: 7, name: "Gourmet Chocolate Makhana (Fox Nuts)", price: 169, weight: "70g" },
     8: { id: 8, name: "Premium Plain Makhana (Fox Nuts)", price: 389, weight: "250g" }
 };
 

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EATS N DRINKS - Premium Roasted Makhana (Fox Nuts)</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">EATS N DRINKS</span>
+                <span class="logo-sub">EAT HEALTHY! DRINK HEALTHY!</span>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#diet" class="nav-link">Diet Plan</a>
+                <a href="#products" class="nav-link">Shop</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="cart-icon-container" onclick="toggleCart()">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+                <div class="mobile-toggle" onclick="toggleMobileMenu()">
+                    <i class="fa-solid fa-bars" id="menuIcon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Premium Quality Snacks</span>
+            <h1>EATS N DRINKS</h1>
+            <p class="tagline">Eat healthy! Drink healthy!</p>
+            <p class="hero-description">Discover our range of gourmet, slow-roasted Makhana (Fox Nuts). Handpicked, nutrient-dense, and popped to crispy perfection with exquisite flavors.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Shop Flavors</a>
+                <a href="#benefits" class="btn btn-secondary">Why Makhana (Fox Nuts)?</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Catalog Section -->
+    <section id="products" class="products-section">
+        <div class="section-header">
+            <span class="sub-title">Crispy & Wholesome</span>
+            <h2>Explore Our Range</h2>
+            <div class="decorator-line"></div>
+        </div>
+
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card" data-id="1" data-name="Classic Salted Roasted Makhana (Fox Nuts)" data-price="169" data-weight="70g">
+                <div class="product-img-wrapper">
+                    <div class="placeholder-img"><i class="fa-solid fa-seedling"></i><span>70g Pack</span></div>
+                </div>
+                <div class="product-info">
+                    <span class="product-weight">70g</span>
+                    <h3>Classic Salted Makhana (Fox Nuts)</h3>
+                    <div class="price-container">
+                        <span class="original-price">MRP ₹199</span>
+                        <span class="offer-price">₹169</span>
+                    </div>
+                    <button class="btn btn-add-cart" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" data-id="2" data-name="Spicy Masala Roasted Makhana (Fox Nuts)" data-price="169" data-weight="70g">
+                <div class="product-img-wrapper">
+                    <div class="placeholder-img"><i class="fa-solid fa-pepper-hot"></i><span>70g Pack</span></div>
+                </div>
+                <div class="product-info">
+                    <span class="product-weight">70g</span>
+                    <h3>Spicy Masala Makhana (Fox Nuts)</h3>
+                    <div class="price-container">
+                        <span class="original-price">MRP ₹199</span>
+                        <span class="offer-price">₹169</span>
+                    </div>
+                    <button class="btn btn-add-cart" onclick="addToCart(2)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card" data-id="3" data-name="Tangy Tomato Roasted Makhana (Fox Nuts)" data-price="169" data-weight="70g">
+                <div class="product-img-wrapper">
+                    <div class="placeholder-img"><i class="fa-solid fa-apple-whole"></i><span>70g Pack</span></div>
+                </div>
+                <div class="product-info">
+                    <span class="product-weight">70g</span>
+                    <h3>Tangy Tomato Makhana (Fox Nuts)</h3>
+                    <div class="price-container">
+                        <span class="original-price">MRP ₹199</span>
+                        <span class="offer-price">₹169</span>
+                    </div>
+                    <button class="btn btn-add-cart" onclick="addToCart(3)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card" data-id="4" data-name="Cream & Onion Roasted Makhana (Fox Nuts)" data-price="169" data-weight="70g">
+                <div class="product-img-wrapper">
+                    <div class="placeholder-img"><i class="fa-solid fa-cheese"></i><span>70g Pack</span></div>
+                </div>
+                <div class="product-info">
+                    <span class="product-weight">70g</span>
+                    <h3>Cream & Onion Makhana (Fox Nuts)</h3>
+                    <div class="price-container">
+                        <span class="original-price">MRP ₹199</span>
+                        <span class="offer-price">₹169</span>
+                    </div>
+                    <button class="btn btn-add-cart" onclick="addToCart(4)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card" data-id="5" data-name="Cheese & Herbs Roasted Makhana (Fox Nuts)" data-price="169" data-weight="70g">
+                <div class="product-img-wrapper">
+                    <div class="placeholder-img"><i class="fa-solid fa-stroopwafel"></i><span>70g Pack</span></div>
+                </div>
+                <div class="product-info">
+                    <span class="product-weight">70g</span>
+                    <h3>Cheese & Herbs Makhana (Fox Nuts)</h3>
+                    <div class="price-container">
+                        <span class="original-price">MRP ₹199</span>
+                        <span class="offer-price">₹169</span>
+                    </div>
+                    <button class="btn btn-add-cart" onclick="addToCart(5)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card" data-id="6" data-name="Pudina Punch Roasted Makhana (Fox Nuts)" data-price="169" data-weight="70g">
+                <div class="product-img-wrapper">
+                    <div class="placeholder-img"><i class="fa-solid fa-leaf"></i><span>70g Pack</span></div>
+                </div>
+                <div class="product-info">
+                    <span class="product-weight">70g</span>
+                    <h3>Pudina Punch Makhana (Fox Nuts)</h3>
+                    <div class="price-container">
+                        <span class="original-price">MRP ₹199</span>
+                        <span class="offer-price">₹169</span>
+                    </div>
+                    <button class="btn btn-add-cart" onclick="addToCart(6)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card" data-id="7" data-name="Sweet & Sour Roasted Makhana (Fox Nuts)" data-price="169" data-weight="70g">
+                <div class="product-img-wrapper">
+                    <div class="placeholder-img"><i class="fa-solid fa-candy-cane"></i><span>70g Pack</span></div>
+                </div>
+                <div class="product-info">
+                    <span class="product-weight">70g</span>
+                    <h3>Sweet & Sour Makhana (Fox Nuts)</h3>
+                    <div class="price-container">
+                        <span class="original-price">MRP ₹199</span>
+                        <span class="offer-price">₹169</span>
+                    </div>
+                    <button class="btn btn-add-cart" onclick="addToCart(7)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 8 (Plain Makhana 250g) -->
+            <div class="product-card plain-premium" data-id="8" data-name="Premium Plain Makhana (Fox Nuts)" data-price="389" data-weight="250g">
+                <div class="product-img-wrapper">
+                    <div class="placeholder-img plain-bg"><i class="fa-solid fa-box-open"></i><span>250g Mega Pack</span></div>
+                </div>
+                <div class="product-info">
+                    <span class="product-weight highlight">250g Pack</span>
+                    <h3>Premium Plain Makhana (Fox Nuts)</h3>
+                    <div class="price-container">
+                        <span class="original-price">MRP ₹499</span>
+                        <span class="offer-price font-large">₹389</span>
+                    </div>
+                    <button class="btn btn-add-cart highlight-btn" onclick="addToCart(8)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informational Section: About -->
+    <section id="about" class="info-section about-section">
+        <div class="section-container">
+            <div class="info-image-side">
+                <div class="placeholder-3d">
+                    <div class="cube-visual">
+                        <i class="fa-solid fa-cube dynamic-icon"></i>
+                        <span class="placeholder-text">[3D Interactive Model Placeholder]</span>
+                        <span class="coming-soon-badge">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info-content-side">
+                <span class="sub-title">Our Heritage</span>
+                <h2>The Rich History of Makhana (Fox Nuts)</h2>
+                <p>Makhana (Fox Nuts), also known structurally as lotus seeds, has been celebrated for centuries across Eastern cultures as a sacred and deeply nourishing superfood. Cultivated primarily in clean wetland ecosystems, the process of harvesting and popping makhana seeds is a traditional art requiring exceptional patience and refinement.</p>
+                <p>At <strong>EATS N DRINKS</strong>, we bridge this ancient legacy with contemporary culinary experiences. By carefully sorting the highest quality seeds, we slow-roast and season them with premium ingredients—offering a snack that maintains its rich ancestral value while remaining highly appealing to international palates.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informational Section: Benefits -->
+    <section id="benefits" class="info-section benefits-section bg-cream">
+        <div class="section-container reverse">
+            <div class="info-image-side">
+                <div class="placeholder-3d">
+                    <div class="cube-visual-alt">
+                        <i class="fa-solid fa-heart-pulse dynamic-icon"></i>
+                        <span class="placeholder-text">[3D Interactive Benefits Explainer]</span>
+                        <span class="coming-soon-badge">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info-content-side">
+                <span class="sub-title">Pure Nutrition</span>
+                <h2>Health Profiles of Makhana (Fox Nuts)</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div>
+                            <h4>Rich in Vitamin B12 & Proteins</h4>
+                            <p>Assists nerve health, supports natural cell preservation, and helps build lean muscle tissue.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                        <div>
+                            <h4>Low Glycemic Index (GI)</h4>
+                            <p>Provides sustained energy releases without causing sudden blood sugar or insulin spikes.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                        <div>
+                            <h4>Zero Trans-Fat & High Dietary Fiber</h4>
+                            <p>Promotes comfortable digestion and serves as an ideal daily office companion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informational Section: Diet Plan -->
+    <section id="diet" class="info-section diet-section">
+        <div class="section-container">
+            <div class="info-image-side">
+                <div class="placeholder-3d">
+                    <div class="cube-visual">
+                        <i class="fa-solid fa-seedling dynamic-icon"></i>
+                        <span class="placeholder-text">[3D Interactive Weight Loss Assistant]</span>
+                        <span class="coming-soon-badge">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info-content-side">
+                <span class="sub-title">Diet Assistant</span>
+                <h2>Makhana (Fox Nuts) for Weight Loss</h2>
+                <p>Integrating Makhana (Fox Nuts) into your weight management routine helps curb food cravings naturally. High dietary fiber content causes the seeds to expand slowly in your digestive system, extending feelings of satiety on fewer daily calories.</p>
+                <div class="diet-steps">
+                    <div class="step">
+                        <span class="step-num">01</span>
+                        <p><strong>Mid-Morning Substitute:</strong> Replace high-calorie snacks or potato chips with 1 serving of flavored roasted makhana (fox nuts).</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">02</span>
+                        <p><strong>Pre-Workout Fuel:</strong> Combine lightly-salted makhana with raw almonds to obtain mineral and protein support.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">03</span>
+                        <p><strong>Evening Beverage Pairing:</strong> Pair a healthy cup of green tea or herbal tea with crunchy plain makhana seeds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sliding Shopping Cart Drawer -->
+    <div id="cartDrawer" class="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="btn-close-cart" onclick="toggleCart()">&times;</button>
+        </div>
+        <div class="cart-body" id="cartBody">
+            <div class="empty-cart-msg">Your cart is currently empty!</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total Amount:</span>
+                <span id="cartTotalValue">₹0.00</span>
+            </div>
+            <a href="#checkout" class="btn btn-checkout" onclick="toggleCart()">Proceed to Checkout</a>
+        </div>
+    </div>
+
+    <!-- Checkout / Payment Section -->
+    <section id="checkout" class="checkout-section">
+        <div class="section-header">
+            <span class="sub-title">Secure & Easy</span>
+            <h2>Complete Your Purchase</h2>
+            <div class="decorator-line"></div>
+        </div>
+
+        <div class="checkout-container">
+            <!-- Left Side: Order Summary -->
+            <div class="checkout-summary">
+                <h3>Order Summary</h3>
+                <div id="summaryItemsList">
+                    <p class="neutral-text">Please add items to your cart to begin.</p>
+                </div>
+                <div class="summary-totals">
+                    <div class="total-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotalPrice">₹0.00</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Shipping:</span>
+                        <span class="text-green">FREE</span>
+                    </div>
+                    <div class="total-row grand-total">
+                        <span>Total Payable:</span>
+                        <span id="grandTotalPrice">₹0.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Forms -->
+            <div class="checkout-methods">
+                <h3>Payment Methods</h3>
+                
+                <div class="payment-tabs">
+                    <button class="tab-btn active" onclick="switchTab(event, 'cardTab')">Credit/Debit Card</button>
+                    <button class="tab-btn" onclick="switchTab(event, 'upiTab')">UPI (QR Scan)</button>
+                </div>
+
+                <!-- Card Payment Form -->
+                <div id="cardTab" class="tab-content active">
+                    <form id="cardForm" onsubmit="handlePaymentSubmit(event)">
+                        <div class="form-group">
+                            <label for="cardName">Name on Card</label>
+                            <input type="text" id="cardName" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" id="cardNumber" placeholder="4111 2222 3333 4444" maxlength="19" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiry">Expiry</label>
+                                <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="password" id="cvv" placeholder="123" maxlength="3" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-pay">Pay Now</button>
+                    </form>
+                </div>
+
+                <!-- UPI QR Payment -->
+                <div id="upiTab" class="tab-content">
+                    <div class="qr-placeholder-wrapper">
+                        <div class="qr-placeholder">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <span class="qr-caption">[Secure UPI QR Code Placeholder]</span>
+                        </div>
+                        <p class="upi-instructions">Scan the secure QR Code with any UPI-enabled payment application to complete the payment.</p>
+                        <button class="btn btn-pay" onclick="handlePaymentSubmit(event)">Verify UPI Payment</button>
+                    </div>
+                </div>
+
+                <div class="sync-banner">
+                    <i class="fa-solid fa-rotate"></i>
+                    <span>Inventory Sync & Payments: <strong class="badge-coming-soon">Coming Soon</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Chat Support Widget -->
+    <div class="chat-widget-container" id="chatWidgetContainer">
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <div class="active-dot"></div>
+                    <span>EATS N DRINKS Live Support</span>
+                </div>
+                <button class="btn-close-chat" onclick="toggleChat()">&times;</button>
+            </div>
+            <div class="chat-messages">
+                <div class="chat-msg bot">
+                    Hello! Welcome to EATS N DRINKS! How can we assist you with our healthy Makhana (Fox Nuts) snacks today?
+                </div>
+                <div class="chat-notice">
+                    <i class="fa-solid fa-circle-info"></i> Our real-time AI live agent system is <span class="badge-coming-soon">Coming Soon</span>. You can leave a quick note below!
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" placeholder="Type your inquiry here..." disabled>
+                <button class="btn-send-chat" disabled><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button class="chat-trigger-btn" id="chatTriggerBtn" onclick="toggleChat()">
+            <i class="fa-solid fa-comment-dots"></i>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>EATS N DRINKS</h3>
+                <p>Eat healthy! Drink healthy!</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#diet">Diet Plan</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-envelope"></i> support@eatsndrinks.com</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (800) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 EATS N DRINKS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
